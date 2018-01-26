@@ -18,21 +18,6 @@ public class Personagem : MonoBehaviour {
     public int vida_valor_maximo;
     #endregion
 
-    //status do personagem
-    public ListaDeStatus.Status status_do_personagem;
-    public string qual_status;
-
-    public GameObject barra_de_vida;
-
-    #region Sprites
-    public GameObject sprite_de_personagem;
-    public GameObject sprite_de_sombra;
-    public GameObject sprite_de_impacto;
-    #endregion
-
-    public List<ListaDeSkills.Skill> skills;
-    
-
     //golpes
     #endregion
 
