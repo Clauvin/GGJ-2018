@@ -65,13 +65,16 @@ public class EfeitosSonoros : MonoBehaviour {
         audio_source.clip = audio_clip;
         dicionario_de_efeitos_sonoros.Add(nome, audio_source);
     }
-
-
     #endregion
+
+    void Awake()
+    {
+        Inicializacao();
+    }
 
     // Use this for initialization
     void Start () {
-        Inicializacao();
+        
     }
 
     // Update is called once per frame
