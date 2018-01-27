@@ -137,6 +137,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sonic_love: {fileID: 8300000, guid: 13f1842a7235d494ebcc59fcb7cfe362, type: 3}
   death_scream: {fileID: 8300000, guid: f92383847a257854ca9f6d718977a44e, type: 3}
+  transform_to_non_zombie: {fileID: 8300000, guid: 26842f3be61900748badfae261b4db26,
+    type: 3}
 --- !u!4 &547311782
 Transform:
   m_ObjectHideFlags: 0
