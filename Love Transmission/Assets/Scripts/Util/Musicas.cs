@@ -9,10 +9,10 @@ public class Musicas : MonoBehaviour
 {
 
     #region Configuração de Simpleton
-    private static Músicas instancia;
-    public static Músicas Instancia { get { return instancia; } }
+    private static Musicas instancia;
+    public static Musicas Instancia { get { return instancia; } }
 
-    public Músicas() { if (instancia == null) instancia = this; }
+    public Musicas() { if (instancia == null) instancia = this; }
     #endregion
 
     private static Dictionary<string, AudioSource> dicionario_de_musicas;
@@ -32,10 +32,11 @@ public class Musicas : MonoBehaviour
     #endregion
 
     #region Lista de Músicas
-    public AudioClip contra_cama;
-    AudioSource a_s_contra_cama;
-    public AudioClip contra_cama_loop;
-    AudioSource a_s_contra_cama_loop;
+    public AudioClip musica_completa;
+    AudioSource a_s_musica_completa;
+
+    public AudioClip musica_completa_loop;
+    AudioSource a_s_musica_completa_loop;
     #endregion
 
     #region Funções de Tocar Musica
@@ -104,7 +105,6 @@ public class Musicas : MonoBehaviour
     void Start()
     {
         Inicializacao();
-        TocarMusicaEDepoisSeuLoopRepetidamente("Contra Cama", "Contra Cama Loop");
     }
 
     // Update is called once per frame
@@ -113,19 +113,23 @@ public class Musicas : MonoBehaviour
         ChecagemDeRepeticaoDeMusica();
     }
 
+    #region Função de Carregar Música
+    private void CarregarMúsica(AudioClip audio_clip, AudioSource audio_source, string nome)
+    {
+        audio_source = gameObject.AddComponent<AudioSource>();
+        audio_source.clip = audio_clip;
+        dicionario_de_musicas.Add(nome, audio_source);
+    }
+    #endregion
+
     void Inicializacao()
     {
         //Criação do dicionário
         dicionario_de_musicas = new Dictionary<string, AudioSource>(16);
 
         //Criação dos AudioSources e adição à dicionário
-        a_s_contra_cama = gameObject.AddComponent<AudioSource>();
-        a_s_contra_cama.clip = contra_cama;
-        dicionario_de_musicas.Add("Contra Cama", a_s_contra_cama);
-
-        a_s_contra_cama_loop = gameObject.AddComponent<AudioSource>();
-        a_s_contra_cama_loop.clip = contra_cama_loop;
-        dicionario_de_musicas.Add("Contra Cama Loop", a_s_contra_cama_loop);
+        CarregarMúsica(musica_completa, a_s_musica_completa, "Música de Combate");
+        CarregarMúsica(musica_completa_loop, a_s_musica_completa_loop, "Música de Combate Loop");
 
         repetir_musica = false;
         pausado = false;
