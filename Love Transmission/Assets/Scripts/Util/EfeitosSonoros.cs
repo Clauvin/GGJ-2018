@@ -24,29 +24,11 @@ public class EfeitosSonoros : MonoBehaviour {
     private static Dictionary<string, AudioSource> dicionario_de_efeitos_sonoros;
 
     #region Lista de Efeitos Sonoros
-    public AudioClip barulho_de_dano_1;
-    AudioSource a_s_barulho_de_dano_1;
+    public AudioClip sonic_love;
+    AudioSource a_s_sonic_love;
 
-    public AudioClip pensar_nos_amigos;
-    AudioSource a_s_pensar_nos_amigos;
-
-    public AudioClip levantando;
-    AudioSource a_s_levantando;
-
-    public AudioClip dormindo;
-    AudioSource a_s_dormindo;
-
-    public AudioClip sair_da_cama;
-    AudioSource a_s_sair_da_cama;
-
-    public AudioClip travesseiro;
-    AudioSource a_s_travesseiro;
-
-    public AudioClip edredon;
-    AudioSource a_s_edredon;
-
-    public AudioClip colchao;
-    AudioSource a_s_colchao;
+    public AudioClip death_scream;
+    AudioSource a_s_death_scream;
     #endregion
 
     #region Funções de Tocar Som
@@ -70,6 +52,16 @@ public class EfeitosSonoros : MonoBehaviour {
     }
     #endregion
 
+    #region Função de Carregar Som
+    private void CarregarSom(AudioClip audio_clip, AudioSource audio_source, string nome)
+    {
+        audio_source = gameObject.AddComponent<AudioSource>();
+        audio_source.clip = audio_clip;
+        dicionario_de_efeitos_sonoros.Add(nome, audio_source);
+    }
+
+
+    #endregion
 
     // Use this for initialization
     void Start () {
@@ -87,36 +79,7 @@ public class EfeitosSonoros : MonoBehaviour {
         dicionario_de_efeitos_sonoros = new Dictionary<string, AudioSource>(32);
 
         //Criação dos AudioSources e adição à dicionário
-        a_s_barulho_de_dano_1 = gameObject.AddComponent<AudioSource>();
-        a_s_barulho_de_dano_1.clip = barulho_de_dano_1;
-        dicionario_de_efeitos_sonoros.Add("Barulho de Dano 1", a_s_barulho_de_dano_1);
-
-        a_s_pensar_nos_amigos = gameObject.AddComponent<AudioSource>();
-        a_s_pensar_nos_amigos.clip = pensar_nos_amigos;
-        dicionario_de_efeitos_sonoros.Add("Pensar nos Amigos", a_s_pensar_nos_amigos);
-
-        a_s_levantando = gameObject.AddComponent<AudioSource>();
-        a_s_levantando.clip = levantando;
-        dicionario_de_efeitos_sonoros.Add("Levantando", a_s_levantando);
-
-        a_s_dormindo = gameObject.AddComponent<AudioSource>();
-        a_s_dormindo.clip = dormindo;
-        dicionario_de_efeitos_sonoros.Add("Dormindo", a_s_dormindo);
-
-        a_s_sair_da_cama = gameObject.AddComponent<AudioSource>();
-        a_s_sair_da_cama.clip = sair_da_cama;
-        dicionario_de_efeitos_sonoros.Add("Sair da Cama", a_s_sair_da_cama);
-
-        a_s_travesseiro = gameObject.AddComponent<AudioSource>();
-        a_s_travesseiro.clip = travesseiro;
-        dicionario_de_efeitos_sonoros.Add("Travesseiro", a_s_travesseiro);
-
-        a_s_edredon = gameObject.AddComponent<AudioSource>();
-        a_s_edredon.clip = edredon;
-        dicionario_de_efeitos_sonoros.Add("Edredon", a_s_edredon);
-
-        a_s_colchao = gameObject.AddComponent<AudioSource>();
-        a_s_colchao.clip = colchao;
-        dicionario_de_efeitos_sonoros.Add("Colchão", a_s_colchao);
+        CarregarSom(sonic_love, a_s_sonic_love, "Love Sound");
+        CarregarSom(death_scream, a_s_death_scream, "Death Scream");
     }
 }
