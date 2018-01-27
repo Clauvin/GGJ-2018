@@ -1,2 +1,8 @@
-Japanese Dosanko City, asset made by Zenrin CO., LTD., is under the Attribution 4.0 International (CC BY 4.0). The license can be found at https://creativecommons.org/licenses/by/4.0/.
+- Japanese Dosanko City, asset made by Zenrin CO., LTD.
+	...is under the Attribution 4.0 International (CC BY 4.0). The license can be found at https://creativecommons.org/licenses/by/4.0/.
+
+- 154561__ecfike__hurt-argh-1.wav (Hurt Argh! 1), sound effect made by ecfike of FreeSound
+- 258285__soneproject__fairy1.flac (fairy1), sound effect made by soneproject of FreeSound
+- 399294__komit__synth-sparkle.wav (Synth Sparkle), sound effect made by Komit. of FreeSound
+	...is under the CC0 1.0 Universal (CC0 1.0). The license can be found athttps://creativecommons.org/publicdomain/zero/1.0/.
 
