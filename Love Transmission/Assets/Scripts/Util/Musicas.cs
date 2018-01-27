@@ -105,6 +105,7 @@ public class Musicas : MonoBehaviour
     void Start()
     {
         Inicializacao();
+        TocarMusicaEDepoisSeuLoopRepetidamente("Música de Combate", "Música de Combate Loop");
     }
 
     // Update is called once per frame
@@ -197,6 +198,8 @@ public class Musicas : MonoBehaviour
                 qual_musica_toca = null;
             }
             musica.PlayOneShot(musica.clip, volume);
+            Debug.Log(volume);
+            Debug.Log(musica.clip);
         }
     }
     #endregion
