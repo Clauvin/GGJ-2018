@@ -24,8 +24,14 @@ public class Chaser : MonoBehaviour
     }
 
     private void Update()
-    {
+    {   
         agent.SetDestination(target.position);
+    }
+
+    // Set the target of the chaser
+    public void SetTarget(Transform newTarget)
+    {
+        target = newTarget;
     }
 
     //public float speed = 0.01f;
