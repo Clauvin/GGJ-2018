@@ -29,6 +29,9 @@ public class EfeitosSonoros : MonoBehaviour {
 
     public AudioClip death_scream;
     AudioSource a_s_death_scream;
+
+    public AudioClip transform_to_non_zombie;
+    AudioSource a_s_transform_to_non_zombie;
     #endregion
 
     #region Funções de Tocar Som
@@ -70,7 +73,7 @@ public class EfeitosSonoros : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-
+        
     }
 
     void Inicializacao()
@@ -81,5 +84,6 @@ public class EfeitosSonoros : MonoBehaviour {
         //Criação dos AudioSources e adição à dicionário
         CarregarSom(sonic_love, a_s_sonic_love, "Love Sound");
         CarregarSom(death_scream, a_s_death_scream, "Death Scream");
+        CarregarSom(transform_to_non_zombie, a_s_transform_to_non_zombie, "Transform To Non Zombie");
     }
 }
