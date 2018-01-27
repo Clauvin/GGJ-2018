@@ -9,8 +9,6 @@ public class OpçõesMenuPrincipal : OpçõesMenu
 
     //(Novo Jogo / Carregar / Opções / Créditos / Fechar)
     public Text opcao_novo_jogo;
-    public Text opcao_carregar;
-    public Text opcao_opcoes;
     public Text opcao_creditos;
     public Text opcao_fechar;
 

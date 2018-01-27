@@ -389,7 +389,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: Close Game
 --- !u!222 &66768567
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -467,9 +467,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '
-
-'
+  m_Text: New Game
 --- !u!222 &95820627
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -526,12 +524,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   posicao_padrao: 0
   posicao: 0
-  lista_de_opcoes: []
-  lista_de_seletores: []
+  lista_de_opcoes:
+  - {fileID: 95820626}
+  - {fileID: 306462294}
+  - {fileID: 66768566}
+  lista_de_seletores:
+  - {fileID: 522095103}
+  - {fileID: 436833607}
+  - {fileID: 1480566749}
   efeito_sonoro_de_interface: {fileID: 1030326316427936, guid: 6f8861dfc91394a459d20644dbb6e116,
     type: 2}
   acoes_da_selecao: {fileID: 873810959}
-  quantos_campos: 0
+  quantos_campos: 3
 --- !u!1 &207614494
 GameObject:
   m_ObjectHideFlags: 0
@@ -888,7 +892,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: Credits
 --- !u!222 &306462295
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1272,8 +1276,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   opcao_novo_jogo: {fileID: 95820626}
-  opcao_carregar: {fileID: 0}
-  opcao_opcoes: {fileID: 0}
   opcao_creditos: {fileID: 306462294}
   opcao_fechar: {fileID: 66768566}
 --- !u!1 &921046031
