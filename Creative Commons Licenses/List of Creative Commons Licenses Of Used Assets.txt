@@ -11,3 +11,5 @@
 	...is under the CC0 1.0 Universal (CC0 1.0). The license can be found athttps://creativecommons.org/publicdomain/zero/1.0/.
 
 - Fairy Dust Magic Sound Effect (FREE DOWNLOAD) was made by All Free Sound Effects in Youtube. It's free to use, as written in https://www.youtube.com/channel/UCjonyBLM2zmiM-HcVKow_7g/about.
+
+- Jack's Candlestick Truetype Font for Windows license is in the file "jcandlestick.txt" in the same folder where this file is.
