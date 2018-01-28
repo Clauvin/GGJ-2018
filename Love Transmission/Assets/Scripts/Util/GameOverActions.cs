@@ -11,6 +11,7 @@ public class GameOverActions : MonoBehaviour {
 
     public void UseGameOverNoButtonAction()
     {
+        Time.timeScale = 1;
         Closed_Basics_3.LoadScene.Load(0);
     }
 
