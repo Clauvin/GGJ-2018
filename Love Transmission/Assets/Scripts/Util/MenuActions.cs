@@ -7,6 +7,7 @@ public class MenuActions : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         ItsNotHereAnymore(GameObject.Find("Credits"));
+        ItsNotHereAnymore(GameObject.Find("Janela de Tutorial"));
     }
 	
 	// Update is called once per frame
@@ -15,6 +16,12 @@ public class MenuActions : MonoBehaviour {
 	}
 
     public void PlayButtonAction()
+    {
+        ItsNotHereAnymore(GameObject.Find("Menu, Parte Principal"));
+        ItsHereLook(GameObject.Find("Janela de Tutorial"));
+    }
+
+    public void UseSonicLoveButtonAction()
     {
         Closed_Basics_3.LoadScene.Load(1);
     }
@@ -33,6 +40,12 @@ public class MenuActions : MonoBehaviour {
     public void BackCreditsButtonAction()
     {
         ItsNotHereAnymore(GameObject.Find("Credits"));
+        ItsHereLook(GameObject.Find("Menu, Parte Principal"));
+    }
+
+    public void BackTutorialButtonAction()
+    {
+        ItsNotHereAnymore(GameObject.Find("Janela de Tutorial"));
         ItsHereLook(GameObject.Find("Menu, Parte Principal"));
     }
 
