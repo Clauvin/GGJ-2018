@@ -2142,7 +2142,7 @@ MonoBehaviour:
     model and texture of main character\nEider carlos (eidercarlos@gmail.com)\n\t-
     game programmer / bug fixing\nJennifer Prado (jen.p.amorim@gmail.com)\n\t- ui
     art / concept art / model sheets\nVer\xF4nica Sakane (vsakane@gmail.com)\n\t-
-    game design / concept art / model sheets\nJohnny? (@.com)\n\t- Bla bla bla"
+    game design / concept art / model sheets"
 --- !u!222 &1037513471
 CanvasRenderer:
   m_ObjectHideFlags: 0
