@@ -299,7 +299,7 @@ Prefab:
       objectReference: {fileID: 509048565}
     - target: {fileID: 1269411943794304, guid: 19a5e7189394e734d9dd66ac8e40c295, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19a5e7189394e734d9dd66ac8e40c295, type: 2}
@@ -598,7 +598,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Survive against zombies using Sonic Love!
+  m_Text: Transmit sonic love to zombies!
 --- !u!222 &181836863
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3858,7 +3858,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2127627497
 RectTransform:
   m_ObjectHideFlags: 0
