@@ -25,8 +25,8 @@ GameObject:
   - component: {fileID: 54271759652370580}
   - component: {fileID: 114413623234076644}
   - component: {fileID: 195169835888517304}
-  - component: {fileID: 114959883051215236}
   - component: {fileID: 114594754357421160}
+  - component: {fileID: 114256209367767354}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -113,6 +113,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114256209367767354
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1272651811181642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fb88608fe402bc40bd033509152ac49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TimeRemainingToFree: 15
+  damageAmount: 10
 --- !u!114 &114413623234076644
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -136,25 +149,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 301fb8dbb40ac2e4489f94effcd2a1e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gManager: {fileID: 0}
---- !u!114 &114959883051215236
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1272651811181642}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87720e6f2d41e254c904acae2c75e5d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damageAmount: 10
-  damageOnTrigger: 0
-  damageOnCollision: 1
-  continuousDamage: 0
-  continuousTimeBetweenHits: 0
-  destroySelfOnImpact: 0
-  delayBeforeDestroy: 0
 --- !u!195 &195169835888517304
 NavMeshAgent:
   m_ObjectHideFlags: 1

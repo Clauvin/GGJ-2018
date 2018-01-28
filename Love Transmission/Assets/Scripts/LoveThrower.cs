@@ -31,8 +31,8 @@ public class LoveThrower : MonoBehaviour {
             newLoveProjectile.transform.position = new Vector3(newLoveProjectile.transform.position.x, 9.7f, newLoveProjectile.transform.position.z); 
         }   
 
-        Debug.Log("Current projectile pos: "+newLoveProjectile.transform.position);
-        Debug.Log("Spawneer pos: " + bulletSpawn.position);
+        //Debug.Log("Current projectile pos: "+newLoveProjectile.transform.position);
+        //Debug.Log("Spawneer pos: " + bulletSpawn.position);
 
         newLoveProjectile.GetComponent<Rigidbody>().velocity = newLoveProjectile.transform.forward * throwSpeed;
         Destroy(newLoveProjectile, 10.0f);
