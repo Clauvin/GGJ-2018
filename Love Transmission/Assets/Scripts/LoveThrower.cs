@@ -19,7 +19,12 @@ public class LoveThrower : MonoBehaviour {
     void Fire()
     {   
         var newLoveProjectile = Instantiate(loveAmmoPrefab, bulletSpawn.position, bulletSpawn.rotation);
+        if (bulletSpawn.position.y < 0)
+        {
+            Debug.Log("Achamos");
+        }
         newLoveProjectile.GetComponent<Rigidbody>().velocity = newLoveProjectile.transform.forward * throwSpeed;
+        EfeitosSonoros.TocarSom("Love Sound", ControleDeVolumes.volume_de_efeitos_sonoros);
         Destroy(newLoveProjectile, 8.0f);
     }   
 }
