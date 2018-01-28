@@ -6,25 +6,35 @@ public class LoveThrower : MonoBehaviour {
 
     public GameObject loveAmmoPrefab;
     public Transform bulletSpawn;
-    private float throwSpeed = 35.0f;
+    private float throwSpeed = 40.0f;
 	
 	void Update ()
     {       
-        if(Input.GetButtonDown("Fire1"))
+        //if(bulletSpawn.transform.hasChanged)
+        //{
+        //    Debug.Log("Something get wrong...");
+        //}
+
+        if(Input.GetButtonDown("Fire1") || Input.GetButtonDown("Jump"))
         {   
             Fire();
-        }   
+        } 
+       
     }
 
     void Fire()
     {   
         var newLoveProjectile = Instantiate(loveAmmoPrefab, bulletSpawn.position, bulletSpawn.rotation);
-        if (bulletSpawn.position.y < 0)
-        {
-            Debug.Log("Achamos");
-        }
+
+        if(newLoveProjectile.transform.position.y < 9.7f)
+        {   
+            newLoveProjectile.transform.position = new Vector3(newLoveProjectile.transform.position.x, 9.7f, newLoveProjectile.transform.position.z); 
+        }   
+
+        //Debug.Log("Current projectile pos: "+newLoveProjectile.transform.position);
+        //Debug.Log("Spawneer pos: " + bulletSpawn.position);
+
         newLoveProjectile.GetComponent<Rigidbody>().velocity = newLoveProjectile.transform.forward * throwSpeed;
-        EfeitosSonoros.TocarSom("Love Sound", ControleDeVolumes.volume_de_efeitos_sonoros);
-        Destroy(newLoveProjectile, 8.0f);
+        Destroy(newLoveProjectile, 10.0f);
     }   
 }

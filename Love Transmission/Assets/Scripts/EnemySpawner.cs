@@ -41,14 +41,16 @@ public class EnemySpawner : MonoBehaviour {
     }
 
     void MakeThingToSpawn()
-    {
+    {   
         // create a new gameObject
         GameObject clone = Instantiate(spawnPrefab, transform.position, transform.rotation) as GameObject;
+
+        clone.GetComponent<Zoombie>().ZoombieState = ZOOMBIE_STATE.ZOOMBIE;
 
         // set chaseTarget if specified
         if ((chaseTarget != null) && (clone.gameObject.GetComponent<Chaser>() != null))
         {
             clone.gameObject.GetComponent<Chaser>().SetTarget(chaseTarget);
         }
-    }
+    }   
 }

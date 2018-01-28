@@ -9,5 +9,6 @@ public class LevelLoad : MonoBehaviour {
     {
         //Load the level from LevelToLoad
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Time.timeScale = 1;
     }
 }

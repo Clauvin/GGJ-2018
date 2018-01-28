@@ -25,7 +25,8 @@ GameObject:
   - component: {fileID: 54271759652370580}
   - component: {fileID: 114413623234076644}
   - component: {fileID: 195169835888517304}
-  - component: {fileID: 114959883051215236}
+  - component: {fileID: 114594754357421160}
+  - component: {fileID: 114256209367767354}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -40,8 +41,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1272651811181642}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 153.42949, y: 8.895439, z: 119.97814}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -142.36063, y: 9.72, z: -51.31992}
+  m_LocalScale: {x: 1, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -59,7 +60,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: b9a6687319e99c64f8ca41119d858045, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -112,6 +113,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114256209367767354
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1272651811181642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fb88608fe402bc40bd033509152ac49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TimeRemainingToFree: 15
+  damageAmount: 10
 --- !u!114 &114413623234076644
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -124,7 +138,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
---- !u!114 &114959883051215236
+--- !u!114 &114594754357421160
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -132,16 +146,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1272651811181642}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87720e6f2d41e254c904acae2c75e5d3, type: 3}
+  m_Script: {fileID: 11500000, guid: 301fb8dbb40ac2e4489f94effcd2a1e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 10
-  damageOnTrigger: 0
-  damageOnCollision: 1
-  continuousDamage: 0
-  continuousTimeBetweenHits: 0
-  destroySelfOnImpact: 0
-  delayBeforeDestroy: 0
 --- !u!195 &195169835888517304
 NavMeshAgent:
   m_ObjectHideFlags: 1

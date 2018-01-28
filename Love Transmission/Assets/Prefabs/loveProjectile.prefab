@@ -23,9 +23,10 @@ GameObject:
   - component: {fileID: 135900773583181982}
   - component: {fileID: 23514503410310410}
   - component: {fileID: 54907830805428486}
+  - component: {fileID: 114467761582902378}
   m_Layer: 0
   m_Name: loveProjectile
-  m_TagString: Untagged
+  m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56,7 +57,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: b9a6687319e99c64f8ca41119d858045, type: 2}
+  - {fileID: 2100000, guid: 31e29374733975b4a9a15d0f1c09a222, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -97,6 +98,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &114467761582902378
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1017143329674972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38e78661c6473cf478b73f74f74cb444, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wasHit: 0
 --- !u!135 &135900773583181982
 SphereCollider:
   m_ObjectHideFlags: 1

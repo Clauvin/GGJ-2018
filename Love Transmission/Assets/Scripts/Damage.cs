@@ -40,8 +40,7 @@ public class Damage : MonoBehaviour {
         }
     }
 
-
-    void OnCollisionEnter(Collision collision)// this is used for things that explode on impact and are NOT triggers
+    private void OnCollisionEnter(Collision collision)// this is used for things that explode on impact and are NOT triggers
     {
         if (damageOnCollision)
         {
@@ -64,7 +63,6 @@ public class Damage : MonoBehaviour {
             }
         }
     }
-
 
     void OnCollisionStay(Collision collision) // this is used for damage over time things
     {
