@@ -56,7 +56,8 @@ public class Health : MonoBehaviour
             }
             else
             { // here is where you do stuff once ALL lives are gone)
-                isAlive = false;
+                Morreu();
+                
 
                 switch (onLivesGone)
                 {   
@@ -94,5 +95,15 @@ public class Health : MonoBehaviour
     {
         respawnPosition = newRespawnPosition;
         respawnRotation = newRespawnRotation;
+    }
+
+    public void Morreu()
+    {
+        if (isAlive)
+        {
+            EfeitosSonoros.TocarSom("Death Scream", ControleDeVolumes.volume_de_efeitos_sonoros);
+            isAlive = false;
+        }
+        else { }
     }
 }
