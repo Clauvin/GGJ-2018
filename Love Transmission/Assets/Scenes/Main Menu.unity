@@ -2138,10 +2138,10 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "In alphabetical Order:\nCl\xE1uvin erlan (clauvin_almeida@hotmail.com)\n\t-
-    ui programmer / sound design / bug fixing\nDouglas aguila (dougfeka@gmail.com)\n\t-
-    model and texture of main character\nEider carlos (eidercarlos@gmail.com)\n\t-
-    game programmer / bug fixing\nJennifer Prado (jen.p.amorim@gmail.com)\n\t- ui
-    art / concept art / model sheets\nVer\xF4nica Sakane (vsakane@gmail.com)\n\t-
+    ui programmer / sound design / bug fixing / buggy spinning smoke particles\nDouglas
+    aguila (dougfeka@gmail.com)\n\t- model and texture of main character\nEider carlos
+    (eidercarlos@gmail.com)\n\t- game programmer / bug fixing\nJennifer Prado (jen.p.amorim@gmail.com)\n\t-
+    ui art / concept art / model sheets\nVer\xF4nica Sakane (vsakane@gmail.com)\n\t-
     game design / concept art / model sheets"
 --- !u!222 &1037513471
 CanvasRenderer:
@@ -3364,7 +3364,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1657079557
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3792,7 +3792,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!222 &1783804045
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4802,7 +4802,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2127627497
 RectTransform:
   m_ObjectHideFlags: 0
