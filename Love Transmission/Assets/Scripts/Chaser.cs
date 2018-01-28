@@ -6,30 +6,38 @@ using UnityEngine.AI;
 
 public class Chaser : MonoBehaviour
 {   
-    public Transform target;
+    public GameObject target;
     NavMeshAgent agent;
 
     private void Start()
     {   
-        // if no target specified, assume the player
-        if (target == null)
-        {
-            if (GameObject.FindWithTag("Player") != null)
-            {
-                target = GameObject.FindWithTag("Player").GetComponent<Transform>();
-            }
-        }
+        //If no target specified, assume the player
+        if(target == null)
+        {   
+            if(GameObject.FindWithTag("Player") != null)
+            {   
+                target = GameObject.FindWithTag("Player");
+            }   
+        }   
 
         agent = GetComponent<NavMeshAgent>();
-    }
+    }   
 
     private void Update()
     {   
-        agent.SetDestination(target.position);
+        if(target == null)
+        {
+            Debug.Log("Deu pau!");
+        }
+
+        if(target != null && target.GetComponent<Health>().isAlive)
+        {   
+            agent.SetDestination(target.transform.position);
+        }   
     }
 
     // Set the target of the chaser
-    public void SetTarget(Transform newTarget)
+    public void SetTarget(GameObject newTarget)
     {
         target = newTarget;
     }

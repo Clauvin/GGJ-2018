@@ -9,7 +9,7 @@ public class EnemySpawner : MonoBehaviour {
     public float minSecondsBetweenSpawning = 5.0f;
     public float maxSecondsBetweenSpawning = 10.0f;
 
-    public Transform chaseTarget;
+    public GameObject chaseTarget;
 
     private float savedTime;
     private float secondsBetweenSpawning;
@@ -20,11 +20,11 @@ public class EnemySpawner : MonoBehaviour {
         savedTime = Time.time;
         secondsBetweenSpawning = Random.Range(minSecondsBetweenSpawning, maxSecondsBetweenSpawning);
 
-        if (chaseTarget == null)
+        if(chaseTarget == null)
         {
             if(GameObject.FindWithTag("Player") != null)
             {
-                chaseTarget = GameObject.FindWithTag("Player").GetComponent<Transform>();
+                chaseTarget = GameObject.FindWithTag("Player");
             }
         }
     }
