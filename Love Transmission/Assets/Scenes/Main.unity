@@ -162,6 +162,7 @@ MonoBehaviour:
   backgroundMusic: {fileID: 0}
   gameOverSFX: {fileID: 8300000, guid: f92383847a257854ca9f6d718977a44e, type: 3}
   beatLevelSFX: {fileID: 0}
+  healerMaterial: {fileID: 2100000, guid: 31e29374733975b4a9a15d0f1c09a222, type: 2}
 --- !u!1 &76327591
 GameObject:
   m_ObjectHideFlags: 0
@@ -828,7 +829,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4874565176190006, guid: 40cce91c684f32f40845e02f488ca08a, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 9.76
+      value: 9.69
       objectReference: {fileID: 0}
     - target: {fileID: 4874565176190006, guid: 40cce91c684f32f40845e02f488ca08a, type: 2}
       propertyPath: m_LocalPosition.z
@@ -872,11 +873,16 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4771350681780226, guid: 40cce91c684f32f40845e02f488ca08a, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4670690541489724, guid: 40cce91c684f32f40845e02f488ca08a, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 23672119430559776, guid: 40cce91c684f32f40845e02f488ca08a,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 40cce91c684f32f40845e02f488ca08a, type: 2}

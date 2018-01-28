@@ -25,10 +25,6 @@ public class Chaser : MonoBehaviour
 
     private void Update()
     {   
-        if(target == null)
-        {
-            Debug.Log("Deu pau!");
-        }
 
         if(target != null && target.GetComponent<Health>().isAlive)
         {   

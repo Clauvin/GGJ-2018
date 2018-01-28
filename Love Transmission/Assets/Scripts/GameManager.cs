@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 
 public class GameManager : MonoBehaviour
-{
+{   
 
     public static GameManager gm;
 
@@ -33,6 +33,8 @@ public class GameManager : MonoBehaviour
     public AudioClip beatLevelSFX;
 
     private Health playerHealth;
+
+    public Material healerMaterial;
 
     void Start()
     {
@@ -71,6 +73,7 @@ public class GameManager : MonoBehaviour
 
                     // switch which GUI is showing		
                     //mainCanvas.SetActive(false);
+                    PauseGame();
                     gameOverCanvas.SetActive(true);
                 }
                 else if (canBeatLevel && score >= beatLevelScore)
@@ -113,18 +116,10 @@ public class GameManager : MonoBehaviour
 
     }
 
-
-    //public void Collect(int amount)
-    //{
-    //    score += amount;
-    //    if (canBeatLevel)
-    //    {
-    //        mainScoreDisplay.text = score.ToString() + " of " + beatLevelScore.ToString();
-    //    }
-    //    else
-    //    {
-    //        mainScoreDisplay.text = score.ToString();
-    //    }
-
-    //}
+    private void PauseGame()
+    {
+        Time.timeScale = 0;
+        //pausePanel.SetActive(true);
+        //Disable scripts that still work while timescale is set to 0
+    }
 }
