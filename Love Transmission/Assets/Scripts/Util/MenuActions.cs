@@ -8,6 +8,7 @@ public class MenuActions : MonoBehaviour {
 	void Start () {
         ItsNotHereAnymore(GameObject.Find("Credits"));
         ItsNotHereAnymore(GameObject.Find("Janela de Tutorial"));
+        ItsNotHereAnymore(GameObject.Find("Menu, Parte Principal"));
     }
 	
 	// Update is called once per frame
@@ -28,7 +29,8 @@ public class MenuActions : MonoBehaviour {
 
     public void SettingsButtonAction()
     {
-
+        ItsNotHereAnymore(GameObject.Find("Menu, Parte Principal"));
+        ItsHereLook(GameObject.Find("Licenses"));
     }
 
     public void CreditsButtonAction()
@@ -40,6 +42,12 @@ public class MenuActions : MonoBehaviour {
     public void BackCreditsButtonAction()
     {
         ItsNotHereAnymore(GameObject.Find("Credits"));
+        ItsHereLook(GameObject.Find("Menu, Parte Principal"));
+    }
+
+    public void BackLicensesButtonAction()
+    {
+        ItsNotHereAnymore(GameObject.Find("Licenses"));
         ItsHereLook(GameObject.Find("Menu, Parte Principal"));
     }
 
